@@ -26,7 +26,7 @@ jobs:
       - name: Docker meta
         uses: docker/metadata-action@v3
         with:
-          images: ${{ IMAGE_NAME }}
+          images: ${{ env.IMAGE_NAME }}
           
       - name: output
         run: |
